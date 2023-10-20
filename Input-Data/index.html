@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Sampah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center">
+      <div id="header-left" class="d-flex">
+        <h3><span id="headerEco">Eco</span>Sampah</h3>
+        <nav id="navbar" class="align-items-center">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-black me-4"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Features
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ambil Sampah</a></li>
+            </ul>
+          </div>
+          <a href="">Contact Us</a>
+        </nav>
+      </div>
+      <img
+        src="../assets/happy-woman-pink-turtleneck.jpg"
+        width="48"
+        class="rounded-circle"
+        alt="Photo Profile"
+      />
+    </header>
+    <section id="input-data" class="text-center">
+      <h2 class="rounded-4">Pick Up</h2>
+      <hr />
+      <h3>Input Data Sampah</h3>
+      <p class="mb-5">
+        Layanan ini membantu menghubungkan pengguna dengan penyedia jasa
+        pengambilan sampah profesional untuk memastikan sampah kamu diproses
+        dengan benar
+      </p>
+      <form class="text-start">
+        <div class="mb-4">
+          <label for="inputName" class="form-label fw-bold">Nama</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            placeholder="Masukkan nama"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="inputNoHP" class="form-label fw-bold"
+            >Nomor Handphone</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="inputNoHP"
+            placeholder="Masukkan nomor handphone"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="inputAlamat" class="form-label fw-bold">Alamat</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAlamat"
+            placeholder="Masukkan alamat lengkap penjemputan (nama jalan, nomor rumah, RT, RW, Dusun, Desa, Kecamatan, Kabupaten/Kota, Provinsi)"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <p class="fw-bold">Jenis Sampah</p>
+          <div id="pilihan-jenis-sampah" class="row row-cols-3 ms-2">
+            <div class="mb-3 me-1 col row">
+              <label for="inputPlastik" class="col-2 col-form-label"
+                >Plastik</label
+              >
+              <div class="col-7">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputPlastik"
+                  placeholder="Dalam KG"
+                  disabled
+                />
+              </div>
+              <button id="buttonTambahSampahPlastik" class="col-3 rounded-pill">
+                Tambah
+              </button>
+            </div>
+            <div class="mb-3 me-1 col row">
+              <label
+                id="sampahMakanan"
+                for="inputSampahMakanan"
+                class="col-3 col-form-label"
+              >
+                Makanan</label
+              >
+              <div class="col-6">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputSampahMakanan"
+                  placeholder="Dalam KG"
+                  disabled
+                />
+              </div>
+              <button id="buttonTambahSampahMakanan" class="col-3 rounded-pill">
+                Tambah
+              </button>
+            </div>
+            <div class="mb-3 me-1 col row">
+              <label for="inputKertas" class="col-2 col-form-label">
+                Kertas</label
+              >
+              <div class="col-7">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputKertas"
+                  placeholder="Dalam KG"
+                  disabled
+                />
+              </div>
+              <button id="buttonTambahKertas" class="col-3 rounded-pill">
+                Tambah
+              </button>
+            </div>
+            <div class="mb-3 me-1 col row">
+              <label for="inputKarton" class="col-2 col-form-label">
+                Karton</label
+              >
+              <div class="col-7">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputKarton"
+                  placeholder="Dalam KG"
+                  disabled
+                />
+              </div>
+              <button id="buttonTambahKarton" class="col-3 rounded-pill">
+                Tambah
+              </button>
+            </div>
+            <div class="mb-3 me-1 col row">
+              <label for="inputKaleng" class="col-2 col-form-label">
+                Kaleng</label
+              >
+              <div class="col-7">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputKaleng"
+                  placeholder="Dalam KG"
+                  disabled
+                />
+              </div>
+              <button id="buttonTambahKaleng" class="col-3 rounded-pill">
+                Tambah
+              </button>
+            </div>
+            <div class="mb-3 me-1 col row">
+              <label for="inputKaca" class="col-2 col-form-label">Kaca</label>
+              <div class="col-7">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputKaca"
+                  placeholder="Dalam KG"
+                  disabled
+                />
+              </div>
+              <button id="buttonTambahKaca" class="col-3 rounded-pill">
+                Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="inputDeskripsi" class="form-label fw-bold"
+            >Deskripsi</label
+          >
+          <textarea
+            class="form-control"
+            id="inputDeskripsi"
+            rows="3"
+            placeholder="Deskripskan kondisi sampah yang ingin diambil"
+            required
+          ></textarea>
+        </div>
+        <div class="mt-5 text-center">
+          <button id="submitDataSampah" type="submit" class="rounded-pill">
+            Cari
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

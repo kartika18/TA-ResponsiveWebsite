@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Krona+One&family=Poppins&display=swap");
+
+:root {
+  --secondary-color: #b7eb8f;
+  --accent-color: #08979c;
+}
+
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  padding: 24px 120px;
+  box-shadow: 0 0.5px 8px gray;
+}
+
+#headerEco {
+  font-family: "Krona One";
+  color: var(--secondary-color);
+}
+
+#header-left h3 {
+  font-family: "Krona One";
+  margin-right: 72px;
+  margin-bottom: 0;
+}
+
+#navbar {
+  display: flex;
+}
+
+#header-left a {
+  text-decoration: none;
+  color: black;
+  margin-right: 36px;
+}
+
+#input-data {
+  margin: 60px 120px;
+}
+
+#input-data h2 {
+  background-color: var(--secondary-color);
+  padding: 12px 24px;
+}
+
+#input-data > p {
+  margin-right: 180px;
+  margin-left: 180px;
+}
+
+#pilihan-jenis-sampah input:focus {
+  border: none;
+}
+
+#pilihan-jenis-sampah > div button {
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+#submitDataSampah:hover {
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+}
+
+#submitDataSampah {
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 12px 24px;
+}
+
+@media only screen and (max-width: 360px) {
+  header {
+    padding: 12px 24px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #input-data {
+    margin: 0;
+    padding: 60px 24px;
+  }
+
+  #input-data > p {
+    margin: 0;
+  }
+
+  #pilihan-jenis-sampah {
+    display: flex;
+    flex-direction: column;
+  }
+}

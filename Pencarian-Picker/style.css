@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Krona+One&family=Poppins&display=swap");
+
+:root {
+  --secondary-color: #b7eb8f;
+  --accent-color: #08979c;
+}
+
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 120px;
+  box-shadow: 0 0.5px 8px gray;
+}
+
+#header-left {
+  display: flex;
+}
+
+#headerEco {
+  font-family: "Krona One";
+  color: var(--secondary-color);
+}
+
+#header-left h3 {
+  font-family: "Krona One";
+  margin-right: 72px;
+  margin-bottom: 0;
+}
+
+#header-left a {
+  text-decoration: none;
+  color: black;
+  margin-right: 36px;
+}
+
+#navbar {
+  display: flex;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+#pencarian-picker {
+  text-align: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+#btn-batalkan-picker {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  margin-top: 24px;
+}
+
+#btn-batalkan-picker:hover {
+  font-weight: bold;
+  border: 2px solid var(--accent-color);
+}
+
+@media only screen and (max-width: 360px) {
+  header {
+    padding: 12px 24px;
+  }
+
+  #navbar {
+    display: none;
+  }
+}
